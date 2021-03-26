@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ae=edge">
 	<meta name="format-detection" content="telephone=no">
-	<title>Document</title>
+	<title>Page</title>
 	<meta name="keywords" content="keywords">
 	<meta name="Description" content="Description">
 	<meta property="og:url" content="https://site.ru">
@@ -31,10 +31,10 @@
 				<nav class="menu__body">
 					<ul class="menu__list">
 						<li class="menu__row">
-							<a class="menu__link _active" href="index.html" title="На главную">Главная</a>
+							<a class="menu__link " href="index.html" title="На главную">Главная</a>
 						</li>
 						<li class="menu__row">
-							<a class="menu__link " href="catalog.html" title="В каталог">Каталог</a>
+							<a class="menu__link _active" href="catalog.html" title="В каталог">Каталог</a>
 						</li>
 						<li class="menu__row">
 							<a class="menu__link " href="#" title="О нас">О нас</a>
@@ -65,47 +65,221 @@
 	</div>
 </header>
 			<main class="main">
-				<section class="top">
-					<div class="_container">
-						<div class="top__body">
-							<h1 class="top__title">Главный заголовок сайта</h1>
-							<p class="top__descr">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные
-								тексты. Составитель лучше напоивший продолжил оксмокс буквенных дал живет пор на берегу!</p>
-							<a href="#" class="top__btn btn" title="Подробнее"><span>Подробнее</span></a>
-						</div>
-						<div class="top__categories categories">
-							<nav class="categories__menu">
-								<ul class="categories__list">
-									<li class="categories__row">
-										<a class="categories__link" href="catalog.html" title="Иван-Чай">
-											<img class="categories__icon" src="img/tea.svg" alt="Tea" />
-											<div class="categories__name">Иван-Чай</div>
+				<section class="catalog">
+					<div class="catalog__container _container">
+						<div class="catalog__body">
+							<aside class="catalog__aside">
+								<ul class="catalog__list">
+									<li class="catalog__row">
+										<a class="catalog__link" href="#" title="Посмотреть категорию">
+											<div class="catalog__img">
+												<img src="img/tea.svg" alt="">
+											</div>
+											<h4 class="catalog__name">Иван-чай</h4>
 										</a>
 									</li>
-									<li class="categories__row">
-										<a class="categories__link" href="#" title="Мёд">
-											<img class="categories__icon" src="img/honey.svg" alt="Honey" />
-											<div class="categories__name">Мёд</div>
+									<li class="catalog__row">
+										<a class="catalog__link" href="#" title="Посмотреть категорию">
+											<div class="catalog__img">
+												<img src="img/honey.svg" alt="">
+											</div>
+											<h4 class="catalog__name">Мёд</h4>
 										</a>
 									</li>
-									<li class="categories__row">
-										<a class="categories__link" href="#" title="Травы">
-											<img class="categories__icon" src="img/herbs.svg" alt="Herbs" />
-											<div class="categories__name">Травы</div>
+									<li class="catalog__row">
+										<a class="catalog__link" href="#" title="Посмотреть категорию">
+											<div class="catalog__img">
+												<img src="img/herbs.svg" alt="">
+											</div>
+											<h4 class="catalog__name">Травы</h4>
 										</a>
 									</li>
-									<li class="categories__row">
-										<a class="categories__link" href="#" title="Кедровый орех">
-											<img class="categories__icon" src="img/cone.svg" alt="Nut" />
-											<div class="categories__name">Кедровый орех</div>
+									<li class="catalog__row">
+										<a class="catalog__link" href="#" title="Посмотреть категорию">
+											<div class="catalog__img">
+												<img src="img/cone.svg" alt="">
+											</div>
+											<h4 class="catalog__name">Кедровый орех</h4>
 										</a>
 									</li>
 								</ul>
-							</nav>
+							</aside>
+							<div class="catalog__inner">
+								<article class="catalog__card card">
+									<button class="card__favorite" title="В избранное">
+										<img src="img/heart.svg" alt="Favorites">
+									</button>
+									<a class="card__img" href="#" title="Подробнее">
+										<picture>
+											<source type="image/webp" srcset="img/set.webp">
+											<img class="ibg" src="img/set.jpg" alt="Tea">
+										</picture>
+									</a>
+									<a class="card__name" href="#" title="Подробнее">
+										<h3>Набор “Подарочный”</h3>
+									</a>
+									<p class="card__descr">
+										Подарочный набор чая в корзине
+									</p>
+									<div class="card__info">
+										<div class="card__rating rating">
+											<div class="rating__stars rating__static"></div>
+											<div class="rating__info">
+												1
+											</div>
+										</div>
+										<div class="card__price">
+											1490<span>руб.</span>
+										</div>
+									</div>
+								</article>
+								<article class="catalog__card card">
+									<button class="card__favorite _select" title="В избранное">
+										<img src="img/heart.svg" alt="Favorites">
+									</button>
+									<div class="card__wrapper">
+										<a class="card__img" href="#" title="Подробнее">
+											<picture>
+												<source type="image/webp" srcset="img/tea.webp">
+												<img class="ibg" src="img/tea.jpg" alt="Tea">
+											</picture>
+										</a>
+										<a class="card__name" href="#" title="Подробнее">
+											<h3>Чай "Иван-Чай"</h3>
+										</a>
+										<p class="card__descr">
+											Чай ручного сбора, прямиком из Буряти
+										</p>
+									</div>
+									<div class="card__info">
+										<div class="card__rating rating">
+											<div class="rating__stars rating__static"></div>
+											<div class="rating__info">
+												2
+											</div>
+										</div>
+										<div class="card__price">
+											490<span>руб.</span>
+										</div>
+									</div>
+								</article>
+								<article class="catalog__card card">
+									<button class="card__favorite" title="В избранное">
+										<img src="img/heart.svg" alt="Favorites">
+									</button>
+									<a class="card__img" href="#" title="Подробнее">
+										<picture>
+											<source type="image/webp" srcset="img/honey.webp">
+											<img class="ibg" src="img/honey.jpg" alt="Tea">
+										</picture>
+									</a>
+									<a class="card__name" href="#" title="Подробнее">
+										<h3>Мёд цветочный</h3>
+									</a>
+									<p class="card__descr">
+										Мед цветочный Алтайский натуральный, без красителей и консерв
+									</p>
+									<div class="card__info">
+										<div class="card__rating rating">
+											<div class="rating__stars rating__static"></div>
+											<div class="rating__info">
+												6
+											</div>
+										</div>
+										<div class="card__price">
+											890<span>руб.</span>
+										</div>
+									</div>
+								</article>
+								<article class="catalog__card card">
+									<button class="card__favorite" title="В избранное">
+										<img src="img/heart.svg" alt="Favorites">
+									</button>
+									<a class="card__img" href="#" title="Подробнее">
+										<picture>
+											<source type="image/webp" srcset="img/nut.webp">
+											<img class="ibg" src="img/nut.jpg" alt="Tea">
+										</picture>
+									</a>
+									<a class="card__name" href="#" title="Подробнее">
+										<h3>Орех кедровый</h3>
+									</a>
+									<p class="card__descr">
+										Очищенное ядро кедрового ореха
+									</p>
+									<div class="card__info">
+										<div class="card__rating rating">
+											<div class="rating__stars rating__static"></div>
+											<div class="rating__info">
+												14
+											</div>
+										</div>
+										<div class="card__price">
+											990<span>руб.</span>
+										</div>
+									</div>
+								</article>
+								<article class="catalog__card card">
+									<button class="card__favorite" title="В избранное">
+										<img src="img/heart.svg" alt="Favorites">
+									</button>
+									<a class="card__img" href="#" title="Подробнее">
+										<picture>
+											<source type="image/webp" srcset="img/tea_2.webp">
+											<img class="ibg" src="img/tea_2.jpg" alt="Tea">
+										</picture>
+									</a>
+									<a class="card__name" href="#" title="Подробнее">
+										<h3>Чай "Иван-Чай"</h3>
+									</a>
+									<p class="card__descr">
+										Чай ручного сбора, прямиком из Буряти
+									</p>
+									<div class="card__info">
+										<div class="card__rating rating">
+											<div class="rating__stars rating__static"></div>
+											<div class="rating__info">
+												10
+											</div>
+										</div>
+										<div class="card__price">
+											590<span>руб.</span>
+										</div>
+									</div>
+								</article>
+								<article class="catalog__card card">
+									<button class="card__favorite" title="В избранное">
+										<img src="img/heart.svg" alt="Favorites">
+									</button>
+									<a class="card__img" href="#" title="Подробнее">
+										<picture>
+											<source type="image/webp" srcset="img/set.webp">
+											<img class="ibg" src="img/set.jpg" alt="Tea">
+										</picture>
+									</a>
+									<a class="card__name" href="#" title="Подробнее">
+										<h3>Набор "Подарочный"</h3>
+									</a>
+									<p class="card__descr">
+										Чай ручного сбора, прямиком из Буряти
+									</p>
+									<div class="card__info">
+										<div class="card__rating rating">
+											<div class="rating__stars rating__static"></div>
+											<div class="rating__info">
+												22
+											</div>
+										</div>
+										<div class="card__price">
+											1990<span>руб.</span>
+										</div>
+									</div>
+								</article>
+							</div>
 						</div>
 					</div>
 				</section>
-				<section class="popular ">
+				<section class="popular _page">
 	<div class="popular__container _container">
 		<div class="popular__slider">
 			<div class="popular__slide">
@@ -294,97 +468,6 @@
 	</div>
 	</div>
 </section>
-				<section class="advantages">
-					<div class="advantages__container _container">
-						<div class="advantages__form news__form form">
-							<div class="form__title">
-								Узнавайте первым о новинках
-							</div>
-							<form action="#" class="form__body" id="form">
-								<input class="form__input" name="mail" type="email" placeholder="Ваш E-mail" required>
-								<button class="form__button" type="submit">></button>
-							</form>
-						</div>
-						<div class="advantages__inner">
-							<div class="advantages__item">
-								<div class="advantages__img">
-									<img src="img/pay.svg" alt="">
-								</div>
-								<p class="advantages__descr">
-									Принимаем любые виды оплаты
-								</p>
-							</div>
-							<div class="advantages__item">
-								<div class="advantages__img">
-									<img src="img/delivery.svg" alt="">
-								</div>
-								<p class="advantages__descr">
-									Отправка в любую точку России в день заказа
-								</p>
-							</div>
-							<div class="advantages__item">
-								<div class="advantages__img">
-									<img src="img/discount.svg" alt="">
-								</div>
-								<p class="advantages__descr">
-									Специальные цены для постоянных клиентов
-								</p>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="blog">
-					<div class="blog__container _container">
-						<div class="blog__inner">
-							<a class="blog__item" href="#" title="Подробнее">
-								<picture class="">
-									<source type="image/webp" srcset="img/tea-art.webp">
-									<img class="ibg" src="img/tea-art.jpg" alt="">
-								</picture>
-								<p class="blog__descr">
-									Полезные свойства Иван-Чая
-								</p>
-							</a>
-							<a class="blog__item" href="#" title="Подробнее">
-								<picture class="">
-									<source type="image/webp" srcset="img/mushroom-art.webp">
-									<img class="ibg" src="img/mushroom-art.jpg" alt="">
-								</picture>
-								<p class="blog__descr">
-									Всё о чайном грибе
-								</p>
-							</a>
-							<a class="blog__item" href="#" title="Подробнее">
-								<picture class="">
-									<source type="image/webp" srcset="img/nut-art.webp">
-									<img class="ibg" src="img/nut-art.jpg" alt="">
-								</picture>
-								<p class="blog__descr">
-									Ценность кедрового ореха
-								</p>
-							</a>
-							<a class="blog__item" href="#" title="Подробнее">
-								<picture class="">
-									<source type="image/webp" srcset="img/tea-art.webp">
-									<img class="ibg" src="img/tea-art.jpg" alt="">
-								</picture>
-								<p class="blog__descr">
-									История чая Руси
-								</p>
-							</a>
-							<a class="blog__item" href="#" title="Подробнее">
-								<picture class="">
-									<source type="image/webp" srcset="img/honey-art.webp">
-									<img class="ibg" src="img/honey-art.jpg" alt="">
-								</picture>
-								<p class="blog__descr">
-									Целебные свойства мёда
-								</p>
-							</a>
-						</div>
-						<a href="#" class="blog__btn btn" title="Смотреть все статьи"><span>Смотреть все</span></a>
-					</div>
-				</section>
 			</main>
 		</div>
 		<footer class="footer">
